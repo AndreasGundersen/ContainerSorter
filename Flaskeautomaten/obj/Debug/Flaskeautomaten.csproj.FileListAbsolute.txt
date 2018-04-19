@@ -1,0 +1,7 @@
+C:\Users\hqk200.UNICPH.000\source\repos\Flaskeautomaten\Flaskeautomaten\obj\Debug\Flaskeautomaten.csprojResolveAssemblyReference.cache
+C:\Users\hqk200.UNICPH.000\source\repos\Flaskeautomaten\Flaskeautomaten\obj\Debug\Flaskeautomaten.csproj.CoreCompileInputs.cache
+C:\Users\hqk200.UNICPH.000\source\repos\Flaskeautomaten\Flaskeautomaten\bin\Debug\Flaskeautomaten.exe.config
+C:\Users\hqk200.UNICPH.000\source\repos\Flaskeautomaten\Flaskeautomaten\bin\Debug\Flaskeautomaten.exe
+C:\Users\hqk200.UNICPH.000\source\repos\Flaskeautomaten\Flaskeautomaten\bin\Debug\Flaskeautomaten.pdb
+C:\Users\hqk200.UNICPH.000\source\repos\Flaskeautomaten\Flaskeautomaten\obj\Debug\Flaskeautomaten.exe
+C:\Users\hqk200.UNICPH.000\source\repos\Flaskeautomaten\Flaskeautomaten\obj\Debug\Flaskeautomaten.pdb

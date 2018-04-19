@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flaskeautomaten", "Flaskeautomaten\Flaskeautomaten.csproj", "{A502B647-69EC-4917-B045-44896ECEF55C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A502B647-69EC-4917-B045-44896ECEF55C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A502B647-69EC-4917-B045-44896ECEF55C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A502B647-69EC-4917-B045-44896ECEF55C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A502B647-69EC-4917-B045-44896ECEF55C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB3082C1-B106-4237-9C30-ED72FE3899D1}
+	EndGlobalSection
+EndGlobal

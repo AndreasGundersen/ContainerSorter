@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Consumer.cs" />
     <Compile Include="Container.cs" />
+    <Compile Include="Conveyor.cs" />
     <Compile Include="IdGen.cs" />
     <Compile Include="Producer.cs" />
     <Compile Include="Program.cs" />

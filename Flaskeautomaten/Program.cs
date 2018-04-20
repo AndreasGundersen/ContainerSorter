@@ -8,21 +8,24 @@ using System.Threading.Tasks;
 namespace Flaskeautomaten
 {
     class Program
-    {   
-       
-       
+    {
+
+
 
         static void Main(string[] args)
-        {   //Creating objects
+        {
+            char[] returntypes = new char[] { 'Y', 'I', 'D' };
+
+            //Creating objects
             Producer containerProducer = new Producer();
             Sorter SortContainers = new Sorter(containerProducer.ContainerQueue);
             Consumer aConsumer = new Consumer(SortContainers.PantA);
             Consumer bConsumer = new Consumer(SortContainers.PantB);
 
             //Creating threads
-            Thread producer = new Thread(containerProducer.Produce);
-            Thread producer1 = new Thread(containerProducer.Produce);
-            Thread Sorter = new Thread(SortContainers.Sort);
+            Thread producer = new Thread(delegate() { containerProducer.Produce(returntypes); });
+            Thread producer1 = new Thread(delegate () { containerProducer.Produce(returntypes); });
+            Thread Sorter = new Thread(delegate () { SortContainers.Sort(returntypes); });
             Thread aConsume = new Thread(aConsumer.Recycle);
             Thread bConsume = new Thread(bConsumer.Recycle);
 

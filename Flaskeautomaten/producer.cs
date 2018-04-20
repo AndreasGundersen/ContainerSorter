@@ -22,9 +22,10 @@ namespace Flaskeautomaten
         }
 
 
-        public void Produce()
+        public void Produce(char[] type)
         {
-            
+            char[] ReturnType = type;
+
             while (true) //The producer will keep trying to produce Containers
             {
                 if (ContainerQueue.Count() < 20) //Check if there are less than 20 Containers in the queue
@@ -33,18 +34,11 @@ namespace Flaskeautomaten
                     {
                         for (int i = 0; i < rnd.Next(1, 11); i++) //run this loop for 1-10
                         {
-                            int ContainerType = rnd.Next(0, 2); //Provide a random int between 0-1
+                            int ContainerType = rnd.Next(0, ReturnType.Length); //Provide a random int between 0-1
                             Container container;
-                            if (ContainerType == 0) //if the random number is 0, create a new container wit the return type A, and place it into the queue
-                            {
-                                container = new Container('A', IdGen.NewId()); //id is taken from the IdGen function, to ensure unique id's even with multiple threads producing.
-                                ContainerQueue.Enqueue(container);
-                            }
-                            else //if it is not 0 it must be 1, then create a new container wit the return type B, and place it into the queue
-                            {
-                                container = new Container('B', IdGen.NewId());
-                                ContainerQueue.Enqueue(container);
-                            }
+                            container = new Container(ReturnType[ContainerType], IdGen.NewId());
+                            ContainerQueue.Enqueue(container);
+
                             Console.WriteLine($"Machine {Thread.CurrentThread.ManagedThreadId} placed Container: {container.Id} type: {container.Type} onto conveyor");
                             
                         }

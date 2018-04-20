@@ -23,9 +23,10 @@ namespace Flaskeautomaten
             Mix = list;
         }
 
-        public void Sort()
+        public void Sort(char[] type)
         {
-            
+            char[] ReturnType = type;
+
             while (true) //keep going..
             {
 
@@ -39,6 +40,14 @@ namespace Flaskeautomaten
                     }
                     sort = Mix.Dequeue(); //when there is something in mix, dequeue a container. 
                     
+                }
+
+                switch (sort.Type)
+                {
+                    case : 
+
+
+
                 }
 
 
